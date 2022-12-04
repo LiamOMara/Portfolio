@@ -1,1 +1,97 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<title>Liam O'Mara</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta name="description" content="This is the homepage to my website resume.">
+	<meta name="color-scheme" content="light dark">
+</head>
+<body class="light">
+	<script>
+		
+if(localStorage.getItem('dark')) {
+  body.classList.add('dark');
+}
+	</script>
+
+	<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Liam O'Mara</a></h1>
+		</header>
+		
+		<nav>         
+			<ul>
+				<li><a href="index.html">Overview</a></li>
+				<li><a href="sparcs.html">ASU SPARCs</a></li>
+				<li>
+					<a href="spaceworks.html">SpaceWorks</a>
+					<ul>
+						<li><a href="spaceworks_lvl1.html">Lvl 1</a></li>
+						<li><a href="spaceworks_lvl2.html">Lvl 2</a></li>
+						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
+					</ul>
+				</li>
+				<li><a href="3dprinting.html">3D Printing</a></li>
+			</ul>  
+		</nav>
+		
+		<main>
+			<h2>My Professional Experiences</h2>
+			<div id="flow_close">
+				<section>
+					<a href="spaceworks.html"><h3>SpaceWorks</h3></a>
+					<p>
+						SpaceWorks are a series of elective courses offered at ASU dedicated to training students to enter the workforce.  
+					</p>
+					<a href="spaceworks.html">
+                    	<img src="SupplementaryFiles/spaceworks_lvl2.jpg" height="250" width="200" alt="Spaceworks lvl2 project">
+					</a>
+				</section>
+
+				<section>
+					<a href="sparcs.html"><h3>SPARCs</h3></a>
+					<p>
+						SPARCs is a project being led by ASU staff and graduate students wherein a cube satellite is being developed with the intent
+                        of monitoring the flares and sunspot activity of red dwarf stars. 
+					</p>
+					<a href="sparcs.html">
+                    	<img src="SupplementaryFiles/sun.jpg" height="200" width="200" alt="Sun">
+					</a>
+				</section>
+				
+				<section>
+					<a href="3dprinting.html"><h3>3D Printing</h3></a>
+					<p>
+						As an engineer, one of my favorite hobbies is 3D printing. I've made various upgrades to my personal 3D printer to allow for more efficient testing. 
+					</p>
+					<a href="3dprinting.html">
+                    	<img src="SupplementaryFiles/printer.jpg" height="250" width="200" alt="3D printer enclosure">
+					</a>
+				</section>
+			</div>
+		</main>
+
+		<footer>
+			<div id="flow_center">
+				<section>			
+					Mobile: (480) 577-1441
+						<br>
+					Email: <a href="mailto:lomara@asu.edu">lomara@asu.edu</a>
+						<br>
+					<a href="https://www.linkedin.com/in/liamomara01/">LinkedIn</a>
+				</section>
+
+				<section>			
+					Color Theme: 
+					<span id="theme">light</span>
+						<br>
+					<button id="theme-toggle">Change Theme</button>
+				</section>
+			</div>
+		</footer>
+	</div>  
+	<script src="selectTheme.js"></script>
+</body>
+</html>
