@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<title>Liam O'Mara | SpaceWorks Lvl 2</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="This page shows detailed information about ASU's SpaceWorks 2 course and what I learned from it">
+	<meta name="color-scheme" content="light dark">
+</head>
+<body class="light">
+	<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Liam O'Mara</a></h1>
+		</header>
+		
+		<nav>         
+			<ul>
+				<li><a href="index.html">Overview</a></li>
+				<li><a href="sparcs.html">ASU SPARCs</a></li>
+				<li>
+					<a href="spaceworks.html">SpaceWorks</a>
+					<ul>
+						<li><a href="spaceworks_lvl1.html">Lvl 1</a></li>
+						<li><a href="spaceworks_lvl2.html">Lvl 2</a></li>
+						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
+					</ul>
+				</li>
+				<li><a href="3dprinting.html">3D Printing</a></li>
+			</ul>  
+		</nav>
+		
+		<main>
+			<h2>Spaceworks Level 2</h2> 
+			<div>
+				<section>
+					<h3>Thermal Optics</h3>
+					<p>
+                        This course continued off the knowledge and skills taught in Spaceworks Lvl 1 and set up new teams of students
+                        who cooperated to develop a thermal camera in a cleanroom-inspired environment. 
+					</p>
+				</section>
+			</div>
+
+            <div>
+                <section>
+                    <h3>Mission Objectives</h3>
+                    <p>
+                        We were given the goal of making a thermal camera that meets the following requirements:
+                    </p>
+                    <ul>
+                        <li>Make use of a moving shutter</li>
+                        <li>Measure the temperature of three thermal objects with an accuracy of 1.5 degrees Celcius</li>
+                        <li>Maintain a budget under $250</li>
+                    </ul>
+                </section>
+            </div>
+
+			<div id="flow_close">
+				<section>
+                    <img src="SupplementaryFiles/spaceworks_lvl2_circuits.jpg" height="200" width="250" alt="Circuits and Compoenents">
+                </section>
+				<section>
+                    <img src="SupplementaryFiles/spaceworks_lvl2_cad.jpg" height="200" width="250" alt="CAD model">
+				</section>
+				<section>
+                    <img src="SupplementaryFiles/spaceworks_lvl2_thermals.jpg" height="200" width="250" alt="Thermal image">
+				</section>
+			</div>
+
+            <div>
+                <section>
+                    <p>
+                        The camera succeeded in all of it's objectives.
+                    </p>
+                    <ul>
+                        <li>The shutter blocked all light and was rotated via stepper motor</li>
+                        <li>Temprature target reached</li>
+                        <li>A budget of $218 was used</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h3>Thermal Data</h3>
+                    <p>
+                        You may have noticed the thermal image above and it's detailed mesurements. This was possible because 
+                        we stored the IR camera data in a matrix form, with numbers indicating the temeprature of each "pixel". 
+                        So every pixel of the image is represented by the respective number in a cell. Below is an example of what the raw data for one of 
+                        these images would look like (cut down to 6x6 to save space):
+                    </p>
+                    <table>
+                        <tr>
+                            <td>34.99</td>
+                            <td>35.99</td>
+                            <td>36.09</td>
+                            <td>35.99</td>
+                            <td>35.79</td>
+                            <td>35.79</td>
+                        </tr>
+                        <tr>
+                            <td>35.99</td>
+                            <td>36.89</td>
+                            <td>36.59</td>
+                            <td>36.49</td>
+                            <td>36.39</td>
+                            <td>36.59</td>
+                        </tr>
+                        <tr>
+                            <td>35.29</td>
+                            <td>35.79</td>
+                            <td>35.79</td>
+                            <td>35.89</td>
+                            <td>35.99</td>
+                            <td>35.79</td>
+                        </tr>
+                        <tr>
+                            <td>35.89</td>
+                            <td>36.79</td>
+                            <td>36.69</td>
+                            <td>36.59</td>
+                            <td>36.29</td>
+                            <td>36.59</td>
+                        </tr>
+                        <tr>
+                            <td>35.59</td>
+                            <td>36.29</td>
+                            <td>35.99</td>
+                            <td>35.79</td>
+                            <td>35.79</td>
+                            <td>35.89</td>
+                        </tr>
+                        <tr>
+                            <td>36.09</td>
+                            <td>36.19</td>
+                            <td>36.39</td>
+                            <td>36.39</td>
+                            <td>36.29</td>
+                            <td>36.59</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h3>Personal Responsibilities</h3>
+                    <p>
+                        I led the design of the camera enclosure and assisted in the system assembly. 
+                        The assembly was commended by Spaceworks staff for being the only one to make use of a custom PCB board for easier soldering.
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h3>Team Members</h3>
+                    <p>
+                        This project was completed by Conor Earley, Lyra Gordon, Neil Naik, and myself
+                        with assistance from Spaceworks staff. 
+                    </p>
+                </section>
+            </div>
+		</main>
+
+		<footer>
+			<div id="flow_center">
+				<section>			
+					Mobile: (480) 577-1441
+						<br>
+					Email: <a href="mailto:lomara@asu.edu">lomara@asu.edu</a>
+						<br>
+					<a href="https://www.linkedin.com/in/liamomara01/">LinkedIn</a>
+				</section>
+
+				<section>			
+					Color Theme: 
+					<span id="theme">light</span>
+						<br>
+					<button id="theme-toggle">Change Theme</button>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<script src="selectTheme.js"></script>
+</body>
+</html>

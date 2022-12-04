@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<title>Liam O'Mara | SpaceWorks Lvl 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="description" content="This page shows detailed information about ASU's SpaceWorks 1 course and what I learned from it">
+	<meta name="color-scheme" content="light dark">
+</head>
+<body class="light">
+	<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Liam O'Mara</a></h1>
+		</header>
+		
+		<nav>         
+			<ul>
+				<li><a href="index.html">Overview</a></li>
+				<li><a href="sparcs.html">ASU SPARCs</a></li>
+				<li>
+					<a href="spaceworks.html">SpaceWorks</a>
+					<ul>
+						<li><a href="spaceworks_lvl1.html">Lvl 1</a></li>
+						<li><a href="spaceworks_lvl2.html">Lvl 2</a></li>
+						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
+					</ul>
+				</li>
+				<li><a href="3dprinting.html">3D Printing</a></li>
+			</ul>  
+		</nav>
+		
+		<main>
+			<h2>Spaceworks Level 1</h2> 
+			<div>
+				<section>
+					<h3>Circuitry and Parachutes</h3>
+					<p>
+                        This course served to give real-world exprience by assigning students into groups based on their individual skills
+                        such that they complemented one another nicely. These groups worked together to create a miniature (1x1x1ft) lander.
+					</p>
+				</section>
+			</div>
+
+            <div>
+                <section>
+                    <h3>Mission Objectives</h3>
+                    <p>
+                        We were given the goal of making a lander that must meet the following requirements:
+                    </p>
+                    <ul>
+                        <li>Eject a parachute to safely land a fifty-foot drop</li>
+                        <li>Deploy a payload exactly five seconds after touchdown</li>
+                        <li>Land directly in the middle of a target (directly below the drop position)</li>
+                        <li>Maintain a budget under $100</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="flow_center">
+                <section>
+                    <p>
+                        The video below shows one of the drop tests we perfomed to find any deficiencies in the lander design. 
+                    </p>
+                    <video controls poster="SupplementaryFiles/spaceworks_lvl1_lander.jpg" width="320" height="240">
+                        <source src="SupplementaryFiles/spaceworks_lvl1_lander.mp4" type="video/mp4">
+                        <source src="SupplementaryFiles/spaceworks_lvl1_lander.og4" type="video/og4">
+                        <a href="SupplementaryFiles/spaceworks_lvl1_lander.mov">Lander parachute drop test</a>
+                    </video>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <p>
+                        The lander succeeded in most of it's objectives, but did not land in the middle of the target. 
+                        <br><br>
+                        We found that incorpating any designs to manipulate the chassis aerodynamics would result in a tangled, 
+                         ineffective parachute. So the goal of landing on the target was largely ignored when we created the lander. 
+                        <br><br>
+                        Below is more information on the other objectives completed:
+                    </p>
+                    <ul>
+                        <li>Parachute ejected via self-actuacted, spring-loaded mechanism triggered with a 9g servo. Resulting in a safe landing</li>
+                        <li>Payload deployed on time via another 9g servo release</li>
+                        <li>A budget of $70 was used</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h3>Personal Responsibilities</h3>
+                    <p>
+                        For this project, I was responsible for designing the payload deployment system and improved the parachute design to a reliable state. 
+                        I also aided in designing and fabricating the lander chassis, which went through three iterations of testing and improvements. 
+                    </p>
+                </section>
+            </div>
+
+            <div>
+                <section>
+                    <h3>Team Members</h3>
+                    <p>
+                        This project was completed by Zachary Norris, Kateri Rosedale, Lyra Gordon, and myself with assistance 
+                        from Spaceworks staff. 
+                    </p>
+                </section>
+            </div>
+		</main>
+
+		<footer>
+			<div id="flow_center">
+				<section>			
+					Mobile: (480) 577-1441
+						<br>
+					Email: <a href="mailto:lomara@asu.edu">lomara@asu.edu</a>
+						<br>
+					<a href="https://www.linkedin.com/in/liamomara01/">LinkedIn</a>
+				</section>
+
+				<section>			
+					Color Theme: 
+					<span id="theme">light</span>
+						<br>
+					<button id="theme-toggle">Change Theme</button>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<script src="selectTheme.js"></script>
+</body>
+</html>

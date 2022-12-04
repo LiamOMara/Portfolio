@@ -1,0 +1,325 @@
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-repeat: no-repeat;
+    background-color: var(--foreground1);
+}
+
+body {
+    background-color: var(--background); 
+    color: var(--text); 
+    font-family: Verdana, Georgia, serif; 
+}
+
+header {
+    background-color: var(--foreground1); 
+    color: var(--headertext);
+    text-align: center;
+}
+    header a:link {
+        text-decoration: none;
+        color: var(--headertext);
+    }
+    header a:visited {
+        text-decoration: none;
+        color: var(--headertext);
+    }
+    header a:hover {
+        text-decoration: none;
+        color: var(--hover);
+    }
+
+h1 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-family: Verdana, Georgia, serif; 
+    letter-spacing: 0.2em;
+}
+
+nav {
+    font-size: 120%;
+    background-color: var(--foreground2);
+    font-weight: bold;
+    text-align: center;
+    padding: 0.3em;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+}
+    nav a {
+        text-decoration: none;
+        display: block;
+    }
+        nav a:link {
+            color: var(--navlink);
+        }
+        nav a:visited {
+            color: var(--navlink);
+        }
+        nav a:hover {
+            color: var(--navlinkhover1);
+        }
+    nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+    nav li:hover ul {
+        display: block;
+    }
+    nav ul ul{
+        position:absolute;
+        background-color: var(--foreground2);
+        padding: 0;
+        display: none;
+    }
+    nav ul ul li {
+        border: 1px solid var(--foreground1);
+        display:block;
+        width: 8em;
+        padding: .2em;
+        padding-left: 1em;
+        margin-left:0;
+    }
+
+#externalLinkHero {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+}
+    #externalLinkHero a {
+        text-decoration: none;
+    }
+    #externalLinkHero a:link {
+        color: var(--navlink);
+    }
+    #externalLinkHero a:visited {
+        color: var(--navlink);
+    }
+    #externalLinkHero a:hover {
+        color: var(--navlinkhover);
+    }
+
+
+main {
+    background-color: var(--foreground3);
+    color: var(--text2);
+    padding-top: 1px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    display: block; 
+    overflow: auto; 
+}
+
+h2 {
+    color: var(--text);
+    font-family: Verdana, Georgia, serif; 
+    text-shadow: 1px 1px var(--foreground2);
+}
+
+h3 {
+    font-family: Verdana, Georgia, serif; 
+    color: var(--text);
+}
+
+h4 {
+    font-family: Verdana, Georgia, serif; 
+}
+    h4 a {
+        text-decoration: none; 
+    }
+
+footer {
+    background-color: var(--foreground2);
+    color: var(--text3);
+    padding: 2em;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Verdana, Georgia, serif; 
+    border-top: 1px solid var(--border);
+}
+    footer a:link {
+        color: var(--navlink);
+    }
+    footer a:visited {
+        color: var(--navlink);
+    }
+    footer a:hover {
+        color: var(--navlinkhover);
+    }
+
+#contact {
+    font-size: 90%;
+}
+
+table {
+    border: 2px solid;
+    border-collapse: collapse;
+    margin:auto;
+}
+    table:nth-of-type(2){
+        background-color: #f5fafc;
+    }
+    td {
+        padding: 0.5em;
+        border: 2px solid; 
+        text-align: center;
+    }
+    th {
+        padding: 0.5em;
+    }
+
+.text {
+    text-align: left;
+}
+
+form {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+}
+
+input {
+    margin-bottom: .5em;
+}
+
+textarea {
+    margin-bottom: .5em;
+}
+
+video {
+    display:flex; 
+    justify-content: center;
+    align-items: center;
+    margin: 1em; 
+}
+
+body.light {
+    --headertext: #FFF9F2;
+    --text: #5C7B93;
+    --text2: #111111;
+    --text3: #222222;
+    --hover: #B78B50;
+    --border: #FFF0DC;
+    --foreground1: #3D4F7B;
+    --foreground2: #FFF0DC; 
+    --foreground3: #FFFBF2; 
+    --background: #BACAD6;
+    --navlink: #75a6d1;
+    --navlinkhover1: #B78B50;
+    --navlinkhover: #B78B50; 
+    --shadow: #5C7B93;
+}
+    
+@media (prefers-color-scheme: dark) {
+    body.dark {
+        --headertext: #FFF9F2;
+        --text: #FFF9F2;
+        --text2: #CDCDCD;
+        --text3: #CDCDCD;
+        --hover: #DEDEDE;
+        --border: var(--foreground1);
+        --foreground1: #666666;
+        --foreground2: #444444; 
+        --foreground3: #222222; 
+        --background: #121212;
+        --navlink: #75a6d1;
+        --navlinkhover1: #6392a4;
+        --navlinkhover: #888888; 
+        --shadow: var(--background);
+    }
+  }
+
+@media (min-width: 820px) {
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    nav li {
+        border-bottom: none;
+    }
+    section {
+        margin-left: 3em;
+        margin-right: 2em;
+        flex: 1;
+    }
+    #flow_close {
+        display: flex;
+        flex-direction: row;
+    }
+        #flow_close a {
+            text-decoration: none;
+        }
+        #flow_close a:link {
+            color: var(--text);
+        }
+        #flow_close a:visited {
+            color: var(--text);
+        }
+        #flow_close a:hover {
+            color: var(--hover);
+        }
+
+    #flow_center {
+        display: flex;
+        flex-direction: row;
+    }
+        #flow_center img {
+            margin-left: 3em;
+            margin-right: 3em;
+        }
+        #flow_center video {
+            margin-left: 15em;
+        }
+}
+
+@media (min-width: 1255px) {
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        border: 1px solid var(--foreground1);
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        box-shadow: 3px 3px var(--shadow);
+    }
+
+    header {
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+    }
+
+    nav {
+        text-decoration: none;
+    }
+
+    @supports (display:grid) {   
+        header {
+            grid-area: header;
+        }
+        nav {
+            grid-area: nav;
+        }
+        main {
+            grid-area: main;
+        }
+        footer {
+            grid-area: footer;
+        }
+        .hero {
+            grid-area: hero;
+        }
+    
+        #wrapper {
+            display: grid; 
+
+            grid-template-areas:
+                                "header"
+                                "nav" 
+                                "main" 
+                                "footer";
+        }
+    }
+}

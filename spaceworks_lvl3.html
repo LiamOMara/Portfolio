@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<title>Liam O'Mara | SpaceWorks Lvl 3</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta name="description" content="This page shows detailed information about ASU's SpaceWorks 3 course and what I learned from it">
+	<meta name="color-scheme" content="light dark">
+</head>
+<body class="light">
+	<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Liam O'Mara</a></h1>
+		</header>
+		
+		<nav>         
+			<ul>
+				<li><a href="index.html">Overview</a></li>
+				<li><a href="sparcs.html">ASU SPARCs</a></li>
+				<li>
+					<a href="spaceworks.html">SpaceWorks</a>
+					<ul>
+						<li><a href="spaceworks_lvl1.html">Lvl 1</a></li>
+						<li><a href="spaceworks_lvl2.html">Lvl 2</a></li>
+						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
+					</ul>
+				</li>
+				<li><a href="3dprinting.html">3D Printing</a></li>
+			</ul>  
+		</nav>
+		
+		<main>
+			<h2>SpaceWorks Level 3</h2> 
+			<div>
+				<section>
+					<h3>Structural Analysis</h3>
+					<p>
+                        This course was a bit different from the others in that there were no groups created for the project, everything was done solo.
+						In this class, students were taught how to idealize and mesh CAD part files using Siemens NX as well as how to perform Structural
+						analysis simulation tests on them. 
+					</p>
+				</section>
+			</div>
+
+			<div>
+				<section>
+					<h3>Three Small Steps</h3>
+				</section>
+			</div>
+
+			<div>
+				<section>
+					<h4>Idealization</h4>
+                    <p>
+                        This section was a bit difficult to master because you need to understand what the program does and doesn't
+						like to work with when meshing. I foudn that the key to a good idealization is to cut away 
+						areas that look structurally insignificant, and reduce flat supporting structures to 2D midsurfaces. 
+                    </p>
+					<img src="SupplementaryFiles/spaceworks_lvl3_ideal1.jpg" height="350" width="200" alt="Before idealization"
+						style="margin-left: 10em; margin-right: 3em;">
+					<img src="SupplementaryFiles/spaceworks_lvl3_ideal2.jpg" height="350" width="200" alt="After idealization">
+					<p>
+						In the end, I was able to get a good grasp of how things are done and I'm
+						 confident that I can repeat the process in a timely manner for future parts. 
+					</p>
+                </section>
+			</div>
+
+            <div id="flow_center">
+				<section>
+					<h4>Meshing</h4>
+                    <p>
+                        Meshing was another difficult process to understand because, at first, a lot of the errors that NX throws 
+						back at you are vague and hard to decipher. After some time, though, I was able to get a proper grasp of how things 
+						worked. 
+                    </p>
+					<img src="SupplementaryFiles/spaceworks_lvl3_mesh.jpg" height="185" width="250" alt="Meshed part">
+					<p>
+						I used a blend of 2D midsurface meshing and 3D quadrilateral meshing, with four small applications of 3D 
+						tetrahedral meshing in areas with complex geometry.
+					</p>
+                </section>
+
+				<section>
+					<h4>Simulation</h4>
+                    <p>
+                        This part can take some time to complete. Not because of the amount of work required by the user, but rather
+						by the computer. 
+                    </p>
+					<img src="SupplementaryFiles/spaceworks_lvl3_sim.jpg" height="200" width="250" alt="Simulated part">
+					<p>
+						I also learned how to properly determine what's wrong with a part's meshing or idealizaion based on 
+						the results provided by the simulation. Initially, I found that random parts would "fly" away from the 
+						assembly, which produced bad data. I found that this was caused by the program not properly applying 
+						mesh mating conditions between the sectioned elements to each part. 
+					</p>
+                </section>
+            </div>
+		</main>
+
+		<footer>
+			<div id="flow_center">
+				<section>			
+					Mobile: (480) 577-1441
+						<br>
+					Email: <a href="mailto:lomara@asu.edu">lomara@asu.edu</a>
+						<br>
+					<a href="https://www.linkedin.com/in/liamomara01/">LinkedIn</a>
+				</section>
+
+				<section>			
+					Color Theme: 
+					<span id="theme">light</span>
+						<br>
+					<button id="theme-toggle">Change Theme</button>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<script src="selectTheme.js"></script>
+</body>
+</html>
