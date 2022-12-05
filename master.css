@@ -197,20 +197,20 @@ video {
 }
 
 body.light {
-    --headertext: #FFF9F2;
-    --text: #5C7B93;
+    --headertext: #444444;
+    --text: #444444;
     --text2: #111111;
     --text3: #222222;
     --hover: #B78B50;
     --border: #FFF0DC;
-    --foreground1: #3D4F7B;
-    --foreground2: #FFF0DC; 
-    --foreground3: #FFFBF2; 
-    --background: #BACAD6;
-    --navlink: #75a6d1;
+    --foreground1: #f2eeeb;
+    --foreground2: #fcf8f6; 
+    --foreground3: #ffffff; 
+    --background: #f0f0f0;
+    --navlink: #4d7192;
     --navlinkhover1: #B78B50;
     --navlinkhover: #B78B50; 
-    --shadow: #5C7B93;
+    --shadow: #d1d1d1;
 }
     
 @media (prefers-color-scheme: dark) {
