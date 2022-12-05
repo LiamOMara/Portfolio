@@ -37,7 +37,7 @@
 					<h3>Structural Analysis</h3>
 					<p>
                         This course was a bit different from the others in that there were no groups created for the project, everything was done solo.
-						In this class, students were taught how to idealize and mesh CAD part files using Siemens NX as well as how to perform Structural
+						In this class, students were taught how to idealize and mesh CAD part files using Siemens NX as well as how to perform structural
 						analysis simulation tests on them. 
 					</p>
 				</section>
@@ -53,9 +53,10 @@
 				<section>
 					<h4>Idealization</h4>
                     <p>
-                        This section was a bit difficult to master because you need to understand what the program does and doesn't
-						like to work with when meshing. I foudn that the key to a good idealization is to cut away 
-						areas that look structurally insignificant, and reduce flat supporting structures to 2D midsurfaces. 
+                        This section was a bit difficult to master because I needed to understand what the program does and doesn't
+						like to work with when meshing. I found that the key to a good idealization is to cut away 
+						areas that look structurally insignificant, and reduce simple supporting structures to 2D midsurfaces 
+						to reduce computational load. 
                     </p>
 					<img src="SupplementaryFiles/spaceworks_lvl3_ideal1.jpg" height="350" width="200" alt="Before idealization"
 						style="margin-left: 10em; margin-right: 3em;">
@@ -77,7 +78,7 @@
                     </p>
 					<img src="SupplementaryFiles/spaceworks_lvl3_mesh.jpg" height="185" width="250" alt="Meshed part">
 					<p>
-						I used a blend of 2D midsurface meshing and 3D quadrilateral meshing, with four small applications of 3D 
+						I used a blend of 2D midsurface meshing and 3D quadrilateral meshing, with some small applications of 3D 
 						tetrahedral meshing in areas with complex geometry.
 					</p>
                 </section>
@@ -91,7 +92,7 @@
 					<img src="SupplementaryFiles/spaceworks_lvl3_sim.jpg" height="200" width="250" alt="Simulated part">
 					<p>
 						I also learned how to properly determine what's wrong with a part's meshing or idealizaion based on 
-						the results provided by the simulation. Initially, I found that random parts would "fly" away from the 
+						the results provided by the simulation. Initially, I found that random parts would "fly away" from the 
 						assembly, which produced bad data. I found that this was caused by the program not properly applying 
 						mesh mating conditions between the sectioned elements to each part. 
 					</p>
