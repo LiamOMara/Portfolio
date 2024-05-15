@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<title>Liam O'Mara | Aerospace Capstone</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="This page shows what I've done with my Ender 3 3D printer and what I've made with it."> 
+	<meta name="color-scheme" content="light dark">
+</head>
+<body class="light">
+	<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Liam O'Mara</a></h1>
+		</header>
+		
+		<nav>   
+			<ul>
+				<li><a href="index.html">Overview</a></li>      
+			</ul>  
+			<ul>
+				<li><a href="sparcs.html">CubeSat</a></li>
+				<li><a href="Capstone.html">Capstone</a></li>
+				<li>
+					<a href="spaceworks.html">SpaceWorks</a>
+					<ul>
+						<li><a href="spaceworks_lvl1.html">Lvl 1</a></li>
+						<li><a href="spaceworks_lvl2.html">Lvl 2</a></li>
+						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
+					</ul>
+				</li>
+				<li><a href="3dprinting.html">3D Printing</a></li>
+			</ul>  
+		</nav>
+		
+		<main>
+			<h2>Aerospace Capstone Project</h2> 
+			<div>
+				<section>
+					<h3>Two Semesters of Research</h3>
+					<p>
+                        The Aerospace (Astronautics) Capstone at ASU had student teams of 6 set out to research and conceptualize spacecraft
+                        set to accomplish any task that they wanted. In our group's case, we chose to design a system that would go into Low Earth Orbit 
+                        to capture derelict spacecraft and bring it back to Earth unharmed. In congruence with recent trends, we also designed the vehicle 
+                        to be reusable. We felt that this would provide us with enough of a challenge to design while still being feasible due to the amount of documented operations in LEO. 
+					</p>
+                    <p>
+                        Our design takes inspiration from a number of different spacecraft, while also implementing novel solutions to common problems. 
+                        The thrusters and general shape of the vehicle are based on Stoke Space's Hopper 2 due to it's demonstrated reusability, and the capture arm is a scaled down re-implementation of the ISS Canadarm.
+                        We also borrowed from SpaceX's Starship and the NASA Space Shuttle program by using composite insulation tiles for the heatshield, and the reentry parachute
+                        system is modeled with NASA's Orion mission as a point of reference. 
+					</p>
+				</section>
+
+                <div id="flow_center">
+                    <section>
+                        <img src="SupplementaryFiles/nozzles.jpg" height="200" width="344" alt="Close-up on Nozzles">
+                    </section>
+                    <section>
+                        <img src="SupplementaryFiles/CapstoneOverview2.jpg" height="300" width="218" alt="Isometric View of CAD Model">
+                    </section>
+                    <section>
+                        <img src="SupplementaryFiles/arm.jpg" height="200" width="250" alt="Close-up on Capture Arm">
+                    </section>
+                </div>
+
+                <section>
+					<h3>My Part in This</h3>
+					<p>
+                        I was personally responsible for designing the Thermal Control and Reentry subsystems. This involved the radiators, heat shielding, and parachutes. 
+                        I also took on a more systems-engineering related role by creating the physical architecture diagram, system performance requirements, and requirments verification plan. 
+					</p>
+                    <p>
+                        The heat shield uses 6 unique designs for 381 tiles in total, 321 of which are hexagons. The remaning 5 tile designs are 
+                        repeated along the edge of the hexagonal shape to fill out the greater circular profile. 
+                        These tiles are designed to made of sintered silica fiber with a layer of borosilicate reaction cured glass covering the surface, 
+                        similar to what was used on the NASA Space Shuttle missions. 
+					</p>
+				
+                    <div id="flow_center">
+                        <section>
+                            <img src="SupplementaryFiles/heatshield1.jpg" height="200" width="344" alt="Close-up on Heat Shield">
+                        </section>
+                        <section>
+                            <img src="SupplementaryFiles/heatshield2.jpg" height="200" width="344" alt="Close-up on Heat Shield Mounting Points">
+                        </section>
+                    </div>
+
+                    <p>
+                        The radiators have two sections - the bulk of it is placed on the surface of the spacecraft itself, 
+                        while the other section is attached to the inner section of the payload bay doors. This acts as a pseudo-deployable 
+                        section for use when the vehicle is in direct sunlight. 
+					</p>
+                    <p>
+                        The parachute design takes heavy inspiration from NASA's Orion mission and involves 3 sets of chutes. 
+                        The 1st set contains 2 drogue chutes dedicated to stabilizing the spacecraft and minimizing any spin.
+                        The 2nd set will have 3 pilot chutes which serve to pull out the next set of 3 main parachutes measuring 52.88m in diameter.
+					</p>
+
+                    <div>
+                        <section>
+                            <img src="SupplementaryFiles/parachute.jpg" height="536" width="327" alt="Parachutes">
+                        </section>
+                    </div>
+
+                    <p>
+                        This physical architecure diagram shows three methods of interfacing between every subsystem. 
+                        Those are the Power, Data, and Thermal Control connections - which are represented by the Red, Blue, and Orange lines, respectively. 
+					</p>
+
+                    <div>
+                        <section>
+                            <img src="SupplementaryFiles/physArch.png" height="530" width="720" alt="Physical Architecture Diagram">
+                        </section>
+                    </div>
+
+
+                </section>
+			</div>
+
+			<div id="externalLinkHero">
+				<a href="https://www.thingiverse.com/thyoverlord/"><h4>Thingiverse Profile Link</h4></a>
+			</div>
+            
+		</main>
+
+		<footer>
+			<div id="flow_center">
+				<section>			
+					Mobile: (480) 577-1441
+						<br>
+					Email: <a href="mailto:lomara@asu.edu">lomara@asu.edu</a>
+						<br>
+					<a href="https://www.linkedin.com/in/liamomara01/" target="_blank">LinkedIn</a>
+				</section>
+
+				<section>			
+					Color Theme: 
+					<span id="theme">light</span>
+						<br>
+					<button id="theme-toggle">Change Theme</button>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<script src="selectTheme.js"></script></body>
+</html>
