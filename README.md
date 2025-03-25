@@ -7,6 +7,7 @@ Hello! I'm Liam O'Mara, a recent graduate with a B.S. in Aerospace Engineering f
 ## 📫 Contact Me
 
 📧 **Email**: [liamomara00@gmail.com](mailto:liamomara00@gmail.com)
+
 💼 **LinkedIn**: [linkedin.com/in/liamomara01/](https://www.linkedin.com/in/liamomara01/)
 
 Feel free to reach out! 
