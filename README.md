@@ -1,8 +1,6 @@
-# 💫 About Me
+#  [**My Portfolio**](https://liamomara.github.io/Portfolio/)
 
 Hello! I'm Liam O'Mara, a recent graduate with a B.S. in Aerospace Engineering from Arizona State University. I'm passionate about mechanical, systems, and test engineering and actively seeking an entry-level role in the aerospace industry. I created this website as a personal project to keep track of my accomplishments and to freshen up my HTML/CSS skills.
-
-🌐 [**My Portfolio**](https://liamomara.github.io/Portfolio/)
 
 ---
 
