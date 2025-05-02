@@ -16,9 +16,7 @@
 		
 		<nav>   
 			<ul>
-				<li><a href="index.html">Overview</a></li>      
-			</ul>  
-			<ul>
+				<li><a href="index.html">Overview</a></li>    
 				<li><a href="sparcs.html">CubeSat</a></li>
 				<li><a href="Capstone.html">Capstone</a></li>
 				<li>
@@ -29,7 +27,7 @@
 						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
 					</ul>
 				</li>
-				<li><a href="3dprinting.html">3D Printing</a></li>
+				<!-- <li><a href="3dprinting.html">3D Printing</a></li> -->
 			</ul>  
 		</nav>
 		
@@ -58,7 +56,7 @@
 					<img src="SupplementaryFiles/nozzles.jpg" height="200" width="344" alt="Close-up on Nozzles">
 				</section>
 				<section>
-					<img src="SupplementaryFiles/CapstoneOverview2.jpg" height="300" width="218" alt="Isometric View of CAD Model">
+					<img src="SupplementaryFiles/CapstoneRotatingView.gif" height="243" width="233" alt="Rotating Isometric view of CAD model">
 				</section>
 				<section>
 					<img src="SupplementaryFiles/arm.jpg" height="200" width="250" alt="Close-up on Capture Arm">
@@ -73,7 +71,7 @@
                         I also took on a more systems-engineering related role by creating the physical architecture diagram, system performance requirements, and requirments verification plan. 
 					</p>
                     <p>
-                        The heat shield uses 6 unique designs for 381 tiles in total, 321 of which are hexagons. The remaning 5 tile designs are 
+						The heat shield uses 6 unique designs for 381 tiles in total, 321 of which are hexagons. The remaning 5 tile designs are 
                         repeated along the edge of the hexagonal shape to fill out the greater circular profile. 
                         These tiles are designed to made of sintered silica fiber with a layer of borosilicate reaction cured glass covering the surface, 
                         similar to what was used on the NASA Space Shuttle missions. 
@@ -88,6 +86,17 @@
 						</section>
 					</div>
 
+					<p>
+						At the early stage of the design, the team wasn't certain about the exact 
+						sizing and power usage the system was going to need - both of which are key variables when determining the sizing for the radiators. 
+						To circumvent this problem, I created a tool in MATLAB that estimated the bulk temperature of the spacecraft given these two variable inputs. 
+						This way, the base calculations for the radiator sizing could be considered as already done - and only required a bit of plug and play to get going. 
+					</p>
+					<div id="flow_close">
+						<section>
+							<IMG SRC="SupplementaryFiles/CapstoneTemperatureCalc.gif"  height="323" width="552" alt="GIF of MATLAB tool used to determine bulk temperature range">
+						</section>
+					</div>
 					<p>
 						The radiators have two sections - the bulk of it is placed on the surface of the spacecraft itself, 
 						while the other section is attached to the inner section of the payload bay doors. This acts as a pseudo-deployable 
@@ -133,9 +142,9 @@
 		<footer>
 			<div id="flow_center">
 				<section>			
-					Mobile: (480) 577-1441
+					Mobile: +1 (480) 577-1441
 						<br>
-					Email: <a href="mailto:lomara@asu.edu">lomara@asu.edu</a>
+					Email: <a href="mailto:liamomara00@gmail.com">liamomara00@gmail.com</a>
 						<br>
 					<a href="https://www.linkedin.com/in/liamomara01/" target="_blank">LinkedIn</a>
 				</section>
