@@ -1,0 +1,156 @@
+<!-- 
+ NOTE: This page is currently unused. Keeping it up because I plan to use it again later.
+ -->
+
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+	<title>Liam O'Mara | Personal Projects</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="master.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<meta name="description" content="This page shows what I've done with my Ender 3 3D printer and what I've made with it."> 
+	<meta name="color-scheme" content="light dark">
+</head>
+<body class="light">
+	<div id="wrapper">
+		<header>
+			<h1><a href="index.html">Liam O'Mara</a></h1>
+		</header>
+		
+		<nav>   
+			<ul>
+				<li><a href="index.html">Overview</a></li>    
+				<li><a href="sparcs.html">CubeSat</a></li>
+				<li><a href="Capstone.html">Capstone</a></li>
+				<li>
+					<a href="spaceworks.html">SpaceWorks</a>
+					<ul>
+						<li><a href="spaceworks_lvl1.html">Lvl 1</a></li>
+						<li><a href="spaceworks_lvl2.html">Lvl 2</a></li>
+						<li><a href="spaceworks_lvl3.html">Lvl 3</a></li>
+					</ul>
+				</li>
+				<!-- <li><a href="3dprinting.html">3D Printing</a></li> -->
+			</ul>  
+		</nav>
+		
+		<main>
+			<h2>Personal Projects</h2> 
+				<p>
+					This page is dedicated to the miscellaneous projects I've worked on at home. From modding handhelds to working on my car. If I spent enough time to break something, it's documented here!
+				</p>
+
+			<div>
+				<section>
+					<h3>Microsoldering!?</h3>
+					<p>
+                        One of my hobbies is playing videogames, so naturally I have a Ninendo Switch. While I do love the system, it certainly shows its age when trying to play modern games. 
+						So I took on the task of modding the console to allow for overclocking. This process isn't as simple as a plugging in a SD card, though. 
+						It requires a RP2040 microcontroller to be physically soldered onto the mainboard - a permanent modification on hardware so small that it requires a microscope just to see what you're doing!
+						<br><br>
+						Luckily, I had some introductory soldering experience under my belt from the SpaceWorks electives. So jumping into microsoldering shouldn't be too hard, right? Well, kinda. I didn't use a microscope, just my phone camera. 
+						So it was difficult to do as a beginner, but I knew that going into it - so I made sure to take things slow and think carefully before every action. The worst thing one can do when working with electonic hardware
+						is try to rush things. It took two hours, but the mod worked! 
+						<br><br>
+						NOTE: I didn't get any good pictures of the results during the process, so I took the system apart partially to get better ones. The image you see below looks dirty because I only captured the 6 solder points near the CPU (~8 not imaged), 
+						which had a lot of thermal paste on the surrounding area. I didn't want to risk desoldering anything so I only cleaned the area up mildly. 
+					</p>
+
+					<div id="flow_close">
+						<section>
+							<img src="SupplementaryFiles/SwitchSolderOverview.jpg" height="768" width="1024" alt="Nintendo Switch Soldering Pic">
+						</section>
+					</div>
+				</section>
+
+				<section>
+					<h3>3D Printer Upgrades</h3>
+					<p>
+                        Over the years with my Ender 3 Pro, I've succumbed to the addiction of making upgrades to allow
+                        for more efficient and quiet printing. Some key mods I've made over the 
+                        years include: 
+					</p>
+                    <ul>
+                        <li>Replaced the main board with a BigTreeTech SKR Mini E3 to allow for additional modifications and less noise.</li>
+                        <li>Installed a BLTouch kit, which makes use of a mechanical push-pin and hall sensor to automatically level the printing board, removing the need to manually adjust the printer bed before each print.</li>
+                        <li>Made an enclosure to reduce noise and maintain a stable printing environment temperature.</li>
+                    </ul>
+				</section>
+
+				<section>
+					<h3>WIP Projects</h3>
+					<p>
+						I have two adjacent projects that I'm currently working on. One is to create a custom videogame controller using my favorite buttons from various other gamepads. 
+						The other is to modify one of my existing videogame controllers to use metal dome switches for it's face buttons, instead of relying on condusctive rubber. 
+						My intent is to modify the existing controller to familiarize mtself with the process of setting up inputs, then move onto the custom gamepad. 
+						<br><br>
+						Here are some very early-stage diagrams showing my plans for each:
+					</p>
+					<section>
+						<img src="SupplementaryFiles/controllerMod.jpg" height="254" width="1024" alt="Dualsense Button Mod Mockup">
+					</section>
+					<br>
+					<section>
+						<img src="SupplementaryFiles/EarlyControllerArchitectureV2.jpg" height="387" width="720" alt="Custom Controller Wiring Archictecture">
+					</section>
+				</section>
+			</div>
+
+<!-- Original Version:
+			<h2>3D Printing</h2> 
+			<div>
+				<section>
+					<h3>Upgrades Upgrades Upgrades!</h3>
+					<p>
+                        Through some time spent on the Ender 3 Pro, I've made some upgrades to allow
+                        for more efficient and quiet printing. Some key upgrades I've made over the 
+                        years include: 
+					</p>
+                    <ul>
+                        <li>Replaced the main board with a BigTreeTech SKR Mini E3 to allow for additional modifications and less noise.</li>
+                        <li>Installed a BLTouch kit, which makes use of a mechanical push-pin and hall sensor to automatically level the printing board, removing the need to manually adjust the printer bed before each print.</li>
+                        <li>Made an enclosure to reduce noise and maintain a stable printing environment temperature.</li>
+                    </ul>
+				</section>
+			</div>
+
+            <div id="flow_close">
+                <section>
+                    <img src="SupplementaryFiles/printer.jpg" height="250" width="200" alt="3D printer enclosure view 1">
+                </section>
+                <section>
+                    <img src="SupplementaryFiles/printer2.jpg" height="250" width="200" alt="3D printer enclosure view 2">
+                </section>
+                <section>
+                    <img src="SupplementaryFiles/printer3.jpg" height="250" width="250" alt="3D printed towel holder">
+                </section>
+            </div>
+
+			<div id="externalLinkHero">
+				<a href="https://www.thingiverse.com/thyoverlord/"><h4>Thingiverse Profile Link</h4></a>
+			</div>
+-->
+		</main>
+
+		<footer>
+			<div id="flow_center">
+				<section>			
+					Mobile: +1 (480) 577-1441
+						<br>
+					Email: <a href="mailto:liamomara00@gmail.com">liamomara00@gmail.com</a>
+						<br>
+					<a href="https://www.linkedin.com/in/liamomara01/" target="_blank">LinkedIn</a>
+				</section>
+
+				<section>			
+					Color Theme: 
+					<span id="theme">light</span>
+						<br>
+					<button id="theme-toggle">Change Theme</button>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<script src="selectTheme.js"></script></body>
+</html>
